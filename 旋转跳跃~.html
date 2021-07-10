@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            transition: all 5s;
+        }
+
+        .father div:nth-child(n) {
+            display: inline-block;
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            top: 0;
+            left: 0;
+        }
+
+        .front {
+            transform: translateZ(200px);
+            background-color: teal;
+        }
+
+        .back {
+            transform: translateZ(-200px);
+            background-color: tomato;
+        }
+
+        .left {
+            transform: translateY(200px) rotateX(90deg);
+            background-color: violet;
+        }
+
+        .right {
+            transform: translateY(-200px) rotateX(90deg);
+            background-color: yellow;
+        }
+
+        .up {
+            background-color: blue;
+            transform: translateX(-200px) rotateY(90deg);
+        }
+
+        .down {
+            background-color: palevioletred;
+            transform: translateX(200px) rotateY(90deg);
+        }
+
+        .father:hover {
+            transform: rotate3d(1, 1, 1, 360deg);
+        }
+
+
+        .father2 {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            transition: all 5s;
+            animation:round 10s linear 0.5s infinite;
+        }
+
+        .one,
+        .two {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            color: papayawhip;
+            font-size: 40px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .one {
+            background-color: navy;
+            transform: translateZ(1px);
+
+        }
+
+        .two {
+            background-color: orangered;
+            transform: rotate3d(0, 1, 0, 180deg);
+
+        }
+
+        .father2:hover {
+            transform: rotate3d(0, 1, 0, 180deg);
+        }
+        @keyframes round{
+            0%{
+
+            }
+            100%{
+                transform: rotate3d(0, 1, 0, 360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="front"></div>
+        <div class="back"></div>
+        <div class="left"></div>
+        <div class=right></div>
+        <div class="up"></div>
+        <div class="down"></div>
+    </div>
+    <div class="father2">
+        <div class="one">校软牛逼</div>
+        <div class="two">前端赛高</div>
+    </div>
+</body>
+
+</html>

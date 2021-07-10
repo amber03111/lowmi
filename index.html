@@ -7,142 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @font-face {
-            font-family: 'icomoon';
-            src: url('fonts/icomoon.eot?oti1ya');
-            src: url('fonts/icomoon.eot?oti1ya#iefix') format('embedded-opentype'),
-                url('fonts/icomoon.ttf?oti1ya') format('truetype'),
-                url('fonts/icomoon.woff?oti1ya') format('woff'),
-                url('fonts/icomoon.svg?oti1ya#icomoon') format('svg');
-            font-weight: normal;
-            font-style: normal;
-            font-display: block;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .box1 {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            height: 40px;
-            width: auto;
-            background-color: #333333;
-            padding-left: 20px;
-            font-size: 12px;
-            color: #b0b0b0;
-        }
-
-        .box11,
-        .box12 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-
-        .text2,
-        .text1 {
-            margin: 10px;
-            display: inline-block;
-            font-family: icomoon;
-            border-left: thin grey solid;
-            padding-left: 5px;
-
-        }
-
-        .leftest {
-            border-left: transparent;
-        }
-
-        .one :hover {
-            color: white;
-        }
-
-        .two :hover {
-            color: orange;
-        }
-
-        .car {
-            display: inline-block;
-            background-color: black;
-            background: rgba(0, 0, 0, 0.5);
-            height: 40px;
-            width: 120px;
-            line-height: 40px;
-            text-align: center;
-            margin-right: 20px;
-        }
-
-        .box2 {
-            margin-top: 22px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            color: black;
-        }
-
-        .logo {
-            width: 60px;
-            height: 60px;
-            border-radius: 20%;
-            margin-left: 20px;
-        }
-
-        .text3 {
-            display: inline-block;
-            margin-left: 20px;
-        }
-
-        .search {
-            height: 40px;
-            width: 150px;
-        }
-
-        .search1 {
-            font-family: 'icomoon';
-            height: 40px;
-            width: 30px;
-            margin-left: -5px;
-        }
-
-        .box3 {
-            margin: 0 auto;
-            margin-top: 20px;
-            width: 1226px;
-            height: 460px;
-            background-image: url(小米素材/1c3e97686468231f3f78048d7f2b7fdc.webp);
-        }
-
-        .box31 {
-            height: 420px;
-            background-color: black;
-            background: rgba(0, 0, 0, 0.3);
-            float: left;
-            padding: 20px 0;
-        }
-
-        .text4 {
-            height: 44px;
-            width: 250px;
-            font-size: 15px;
-            color: white;
-            padding-left: 30px;
-            line-height: 44px;
-        }
-
-        .three :hover {
-            background-color: #FF6700;
-        }
-
-        .box4 {
-            margin-top: 10px;
-        }
+      
     </style>
+    <link rel="stylesheet" href="lowmi.css">
 </head>
 
 <body>
@@ -163,59 +30,142 @@
             <a class="one"> <span class="text2 car leftest"> 购物车</span></a>
         </div>
     </div>
-    <div class="box2">
-        <span class="box21"><img src="小米素材/xiaomitubiaobiaozhisucai-02794217_1.jpg" title="小米官网" class="logo"></span>
-        <span class="box22">
-            <a class="two"> <span class="text3">小米手机</span></a>
-            <a class="two"> <span class="text3">redmi 红米</span></a>
-            <a class="two"> <span class="text3">电视</span></a>
-            <a class="two"> <span class="text3">笔记本</span></a>
-            <a class="two"> <span class="text3">家电</span> </a>
-            <a class="two"> <span class="text3">路由器</span> </a>
-            <a class="two"> <span class="text3">智能硬件</span> </a>
-            <a class="two"> <span class="text3">服务</span> </a>
-            <a class="two"> <span class="text3">社区</span> </a>
-        </span>
-        <form>
-            <input type="text" name="search" class="search">
-            <input type="submit" value="" class="search1 ">
-        </form>
-    </div>
-    <div class="box3">
-        <div class=box31>
-            <a class="three">
-                <div class="text4">手机 电话卡</div>
+    <div class="bigbox">
+        <div class="box2">
+            <span class="box21"><img src="小米素材/xiaomitubiaobiaozhisucai-02794217_1.jpg" title="小米官网"
+                    class="logo"></span>
+            <span class="box22">
+                <a class="two"> <span class="text3">小米手机</span></a>
+                <a class="two"> <span class="text3">redmi 红米</span></a>
+                <a class="two"> <span class="text3">电视</span></a>
+                <a class="two"> <span class="text3">笔记本</span></a>
+                <a class="two"> <span class="text3">家电</span> </a>
+                <a class="two"> <span class="text3">路由器</span> </a>
+                <a class="two"> <span class="text3">智能硬件</span> </a>
+                <a class="two"> <span class="text3">服务</span> </a>
+                <a class="two"> <span class="text3">社区</span> </a>
+            </span>
+            <form>
+                <input type="text" name="search" class="search">
+                <input type="submit" value="" class="search1 ">
+            </form>
+        </div>
+        <div class="box3">
+            <div class=box31>
+                <a class="three">
+                    <div class="text4">手机 电话卡</div>
+                </a>
+                <a class="three">
+                    <div class="text4">电视 盒子</div>
+                </a>
+                <a class="three">
+                    <div class="text4"> 笔记本 显示器</div>
+                </a>
+                <a class="three">
+                    <div class="text4">家电 插线板</div>
+                </a>
+                <a class="three">
+                    <div class="text4">出行 穿戴</div>
+                </a>
+                <a class="three">
+                    <div class="text4">智能 路由器</div>
+                </a>
+                <a class="three">
+                    <div class="text4"> 电源 配件</div>
+                </a>
+                <a class="three">
+                    <div class="text4">健康 儿童</div>
+                </a>
+                <a class="three">
+                    <div class="text4">耳机 音箱</div>
+                </a>
+                <a class="three">
+                    <div class="text4">生活 箱包</div>
+                </a>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="box41">
+                
+                    <div class="text5">小米秒杀</div>
+                    <div class="text5">企业团购</div>
+                    <div class="text5">F码通道</div>
+                
+                
+                    <div class="text5">米粉卡</div>
+                    <div class="text5">以旧换新</div>
+                    <div class="text5">话费充值</div>
+                
+            </div>
+            <div class="four"> <img src="小米素材/5d4298059889417157e8492750328492.jpg" class="picture"></div>
+            <div class="four"><img src="小米素材/9f18ac756fa2cedb16ea429b9c0001af.png" class="picture"></div>
+            <div class="four"><img src="小米素材/b30177d629bfbe2fb42251c1b8538f7b.jpg" class="picture"></div>
+        </div>
+        <div class="floating">
+            <a class="two">
+                <div class="little"></div>
             </a>
-            <a class="three">
-                <div class="text4">电视 盒子</div>
+            <a class="two">
+                <div class="little"></div>
             </a>
-            <a class="three">
-                <div class="text4"> 笔记本 显示器</div>
+            <a class="two">
+                <div class="little"></div>
             </a>
-            <a class="three">
-                <div class="text4">家电 插线板</div>
+            <a class="two">
+                <div class="little"></div>
             </a>
-            <a class="three">
-                <div class="text4">出行 穿戴</div>
-            </a>
-            <a class="three">
-                <div class="text4">智能 路由器</div>
-            </a>
-            <a class="three">
-                <div class="text4"> 电源 配件</div>
-            </a>
-            <a class="three">
-                <div class="text4">健康 儿童</div>
-            </a>
-            <a class="three">
-                <div class="text4">耳机 音箱</div>
-            </a>
-            <a class="three">
-                <div class="text4">生活 箱包</div>
+            <a class="two">
+                <div class="little"></div>
             </a>
         </div>
+       <div class="forget"> <div class="phone">手机</div> <div class="more">查看更多 </div></div>
+        <div class="box6">
+            <div class="box61"> <img src="小米素材/c583f2edc613f1be20fa415910b13ce3.webp" class="phonepicture"
+                    class="box61"></div>
+            <div class="box62">
+                <div class="smallbox">
+                    <img src="小米素材/61454401f855cf5ed64747a6ac04bae5.webp" class="phones">
+                    <div class="smallbox1">Note 10 Pro</div>
+                    <div class="smallbox2">天玑1100年度旗舰芯，VC液冷散</div>
+                </div>
+                <div class="smallbox">
+                    <img src="小米素材/61454401f855cf5ed64747a6ac04bae5.webp" class="phones">
+                    <div class="smallbox1">Note 10 Pro</div>
+                    <div class="smallbox2">天玑1100年度旗舰芯，VC液冷散</div>
+                </div>
+                <div class="smallbox">
+                    <img src="小米素材/61454401f855cf5ed64747a6ac04bae5.webp" class="phones">
+                    <div class="smallbox1">Note 10 Pro</div>
+                    <div class="smallbox2">天玑1100年度旗舰芯，VC液冷散</div>
+                </div>
+                <div class="smallbox">
+                    <img src="小米素材/61454401f855cf5ed64747a6ac04bae5.webp" class="phones">
+                    <div class="smallbox1">Note 10 Pro</div>
+                    <div class="smallbox2">天玑1100年度旗舰芯，VC液冷散</div>
+                </div>
+                <div class="smallbox">
+                    <img src="小米素材/61454401f855cf5ed64747a6ac04bae5.webp" class="phones">
+                    <div class="smallbox1">Note 10 Pro</div>
+                    <div class="smallbox2">天玑1100年度旗舰芯，VC液冷散</div>
+                </div>
+                <div class="smallbox">
+                    <img src="小米素材/61454401f855cf5ed64747a6ac04bae5.webp" class="phones">
+                    <div class="smallbox1">Note 10 Pro</div>
+                    <div class="smallbox2">天玑1100年度旗舰芯，VC液冷散</div>
+                </div>
+                <div class="smallbox">
+                    <img src="小米素材/61454401f855cf5ed64747a6ac04bae5.webp" class="phones">
+                    <div class="smallbox1">Note 10 Pro</div>
+                    <div class="smallbox2">天玑1100年度旗舰芯，VC液冷散</div>
+                </div>
+                <div class="smallbox">
+                    <img src="小米素材/61454401f855cf5ed64747a6ac04bae5.webp" class="phones">
+                    <div class="smallbox1">Note 10 Pro</div>
+                    <div class="smallbox2">天玑1100年度旗舰芯，VC液冷散</div>
+                </div>
+            </div>
+        </div>
     </div>
-
 </body>
 
 </html>
